@@ -12,6 +12,7 @@ This method allows to bypass the patches during the non-executable stack, or to 
 This program has a classic flaw involving the strcpy() function.
 No check is made on the size of argv[1]. The call to strcpy() will have the effect of copying the string on the stack so a null character will not be encountered below we compile our program and we give it the necessary rights in order to be able to run with root rights for a user normal.
 
+#
 # Français
 # Définition
 Une attaque de type return-to-libc est une attaque informatique démarrant généralement par un dépassement de tampon dans lequel l'adresse de retour dans la pile est remplacée par l'adresse d'une autre fonction et une seconde partie de la pile est modifiée pour fournir les paramètres à cette fonction.
