@@ -11,6 +11,8 @@ It is indeed possible to directly return a function of the libc or of another li
 This method allows to bypass the patches during the non-executable stack, or to exploit the overflows involving small buffers (not enough space for the shellcode).
 This program has a classic flaw involving the strcpy() function.
 No check is made on the size of argv[1]. The call to strcpy() will have the effect of copying the string on the stack so a null character will not be encountered below we compile our program and we give it the necessary rights in order to be able to run with root rights for a user normal.
+# Warning
+I am not responsibile of your acts, this code is only for the knowledge and the security.
 
 #
 # Français
@@ -26,3 +28,5 @@ Il est en effet possible de retourner directement une fonction de la libc ou d'u
 Cette méthode permet de contourner les patchs pendant la pile non exécutable, ou encore d'exploiter les débordements impliquant de petits buffers (pas assez de place pour le shellcode).
 Ce programme comporte une faille classique impliquant la fonction strcpy().
 Aucune vérification n'est faite sur la taille de argv[1]. L'appel à strcpy() aura pour effet de copier la chaîne sur la pile donc un caractère nul ne sera pas rencontré ci-après nous compilons notre programme et nous lui donnons les droits nécessaires afin de pouvoir exécuter avec les droits root pour un utilisateur normal.
+# Avertissement
+Je ne suis pas responsable de vos actes, ce code est seulement là pour la connaissance et la sécurité.
