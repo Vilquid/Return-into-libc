@@ -1,6 +1,3 @@
-# Return-into-libc
-#
-
 # English
 # Definition
 A return-to-libc attack is a computer security attack usually starting with a buffer overflow in which a subroutine return address on a call stack is replaced by an address of a subroutine that is already present in the process executable memory, bypassing the no-execute bit feature (if present) and ridding the attacker of the need to inject their own code.
